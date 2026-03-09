@@ -19,3 +19,32 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('authentification/login.php');
 });
+
+Route::get('/', function () {
+    return view('dashbord');
+})->name('dashbord');
+
+Route::get('/sous-traitants', function () {
+    return view('sous_traitants');
+})->name('sous-traitants.index');
+
+Route::get('/zones', function () {
+    return view('zones');
+})->name('zones.index');
+
+Route::get('/tickets', function () {
+    return view('tickets');
+})->name('tickets.index');
+
+Route::get('/kpi-rapports', function () {
+    return view('kpi_rapports');
+})->name('kpi-rapports.index');
+
+Route::get('/parametres', function () {
+    return view('parametres');
+})->name('parametres.index');
+
+Route::get('/gestion_utilisateurs', function () {
+    return view('gestion_utilisateurs');
+})->name('gestion_utilisateurs.index');
+
